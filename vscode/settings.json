@@ -13,11 +13,11 @@
     "terminal.integrated.shellArgs.windows": "-NoLogo",
     "window.title": "${dirty}${activeEditorShort}${separator}${activeFolderMedium}",
     "workbench.colorCustomizations": {
-        "statusBar.noFolderBackground": "#8ea8be",
-        "statusBar.background": "#8ea8be",
-        "activityBar.background": "#aaaaaa",
         "activityBar.activeBackground": "#8ea8be",
+        "activityBar.background": "#aaaaaa",
         "activityBar.foreground": "#000000",
         "activityBar.inactiveForeground": "#666666",
+        "statusBar.background": "#8ea8be",
+        "statusBar.noFolderBackground": "#8ea8be",
     },
 }
