@@ -1,0 +1,23 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80, 120],
+    "files.autoGuessEncoding": true,
+    "files.defaultLanguage": "json",
+    "files.enableTrash": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.enableStatusBarSync": false,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.shellArgs.windows": "-NoLogo",
+    "window.title": "${dirty}${activeEditorShort}${separator}${activeFolderMedium}",
+    "workbench.colorCustomizations": {
+        "statusBar.noFolderBackground": "#8ea8be",
+        "statusBar.background": "#8ea8be",
+        "activityBar.background": "#aaaaaa",
+        "activityBar.activeBackground": "#8ea8be",
+        "activityBar.foreground": "#000000",
+        "activityBar.inactiveForeground": "#666666",
+    },
+}
