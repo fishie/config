@@ -20,4 +20,16 @@
         "statusBar.background": "#8ea8be",
         "statusBar.noFolderBackground": "#8ea8be",
     },
+    "omnisharp.useModernNet": true,
+    "omnisharp.path": "latest",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-NoLogo"
+            ]
+        }
+    }
 }
