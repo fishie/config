@@ -12,5 +12,5 @@ function search
   echo -e "\n\033[1;33msnap\033[0m" &&
   unbuffer snap find $argv | head -n 5 &&
   echo -e "\n\033[1;33mflatpak\033[0m" &&
-  unbuffer flatpak search --columns=name,version,description $argv | head -n 5
+  unbuffer flatpak search --columns=name:f,version:f,description $argv | head -n 5
 end
