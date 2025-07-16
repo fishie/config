@@ -2,9 +2,15 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-function fish_user_key_bindings
-  bind \cd beginning-of-line kill-line
+function smart_escape
+    if commandline --paging-mode
+        commandline --function cancel
+    else
+        commandline ""
+    end
 end
+
+bind \e smart_escape
 
 function search
   echo -e "\033[1;33myay\033[0m" &&
