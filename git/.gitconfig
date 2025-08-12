@@ -1,0 +1,11 @@
+[user]
+	email = rishie@rishie.se
+	name = Rishie Sharma
+[core]
+	autocrlf = false
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[pull]
+	ff = only
