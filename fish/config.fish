@@ -2,6 +2,18 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Smart Enter: run 'ls' when pressing Enter on empty prompt
+function do_enter
+    if test -z (commandline)
+        commandline -r 'ls'
+        commandline -f execute
+    else
+        commandline -f execute
+    end
+end
+bind \r do_enter
+
+# Bind Escape to clear line, similar to how PowerShell handles Escape
 function smart_escape
     if commandline --paging-mode
         commandline --function cancel
@@ -9,14 +21,4 @@ function smart_escape
         commandline ""
     end
 end
-
 bind \e smart_escape
-
-function search
-  echo -e "\033[1;33myay\033[0m" &&
-  unbuffer yay --singlelineresults --topdown -Ss $argv | head -n -2 | head -n 5 &&
-  echo -e "\n\033[1;33msnap\033[0m" &&
-  unbuffer snap find $argv | head -n 5 &&
-  echo -e "\n\033[1;33mflatpak\033[0m" &&
-  unbuffer flatpak search --columns=name:f,version:f,description $argv | head -n 5
-end
