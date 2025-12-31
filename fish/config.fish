@@ -4,10 +4,10 @@ end
 
 # Smart Enter: run 'ls' when pressing Enter on empty prompt
 function do_enter
-    set cmd (commandline)
-    if test -z "$cmd"
-        commandline -r 'ls'
-        commandline -f execute
+    if test -z "$(commandline)"
+        echo
+        ls
+        commandline -f repaint
     else
         commandline -f execute
     end
