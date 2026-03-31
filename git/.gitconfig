@@ -4,8 +4,15 @@
 [core]
 	autocrlf = false
 [push]
+	default = upstream
 	autoSetupRemote = true
 [fetch]
 	prune = true
 [pull]
-	ff = only
+	rebase = true
+[rebase]
+	autoStash = true
+[merge]
+	autoStash = true
+[status]
+	showStash = true
